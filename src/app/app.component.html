@@ -1,0 +1,200 @@
+<div class="container body">
+  <div class="main_container">
+    <div class="col-md-3 left_col">
+      <div class="left_col scroll-view">
+        <div class="navbar nav_title" style="border: 0;">
+          <a href="index.html" class="site_title">
+            <i class="fa fa-paw"></i>
+            <span>Welcome Guest</span>
+          </a>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!-- menu profile quick info -->
+        <!-- /menu profile quick info -->
+
+        <br />
+
+        <!-- sidebar menu -->
+        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+          <div class="menu_section">
+            <h3>Dashboard</h3>
+            <ul class="nav side-menu">
+              <li>
+                <i class="fa fa-home"></i> Sales Dashboard
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- sidebar menu -->
+
+        <!-- menu footer buttons -->
+       
+        <!-- menu footer buttons -->
+      </div>
+    </div>
+
+    <!-- top navigation -->
+    <div class="top_nav">
+      <div class="nav_menu">
+        <nav>
+          
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="">
+              <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <img src="images/img.jpg" alt="">Welcome Guest
+              </a>
+            </li>
+
+         
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- top navigation -->
+
+    <!-- page content -->
+    <div class="right_col" role="main">
+      <div class="">
+        <div class="page-title">
+          <div class="title_left">
+            <!-- <h3>
+              <! <select name='year' class="selectpicker">
+                <option value="2018">Year</option>
+              </select>
+              <select name='quarter' class="selectpicker">
+                <option value="First">Quarter</option>
+              </select>
+              <select name='month' class="selectpicker">
+                <option value="January">Month</option>
+              </select> -->
+            <!-- </h3> -->
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Count of ORDERNUMBER, Sum of SALES
+                  </h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                      <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="close-link">
+                        <i class="fa fa-close"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <fusioncharts [id]="idLineAreaBar" [width]="widthLineAreaBar" [height]="heightLineAreaBar" [type]="typeLineAreaBar" [dataFormat]="dataFormatLineAreaBar" [dataSource]="dataSourceLineAreaBar"></fusioncharts>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="clearfix"></div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Count of ORDERNUMBER
+                </h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li>
+                    <a class="collapse-link">
+                      <i class="fa fa-chevron-up"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="close-link">
+                      <i class="fa fa-close"></i>
+                    </a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div>
+                  <fusioncharts [id]="id" [width]="width" [height]="height" [type]="type" [dataFormat]="dataFormat" [dataSource]="dataSource"></fusioncharts>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Sum of SALES
+                </h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li>
+                    <a class="collapse-link">
+                      <i class="fa fa-chevron-up"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="close-link">
+                      <i class="fa fa-close"></i>
+                    </a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <fusioncharts [id]="idSum" [width]="widthSum" [height]="heightSum" [type]="typeSum" [dataFormat]="dataFormatSum" [dataSource]="dataSourceSum"></fusioncharts>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Sum of SALES,Count of ORDERNUMBER
+                    </h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li>
+                        <a class="collapse-link">
+                          <i class="fa fa-chevron-up"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="close-link">
+                          <i class="fa fa-close"></i>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <fusioncharts [id]="idLineBar" [width]="widthLineBar" [height]="heightLineBar" [type]="typeLineBar" [dataFormat]="dataFormatLineBar" [dataSource]="dataSourceLineBar"></fusioncharts>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <!-- page content -->
+
+    <!-- footer content -->
+    <footer>
+      <div class="pull-right">
+        Welcome Guest
+      </div>
+      <div class="clearfix"></div>
+    </footer>
+    <!-- footer content -->
+  </div>
+</div>
+<div>
+</div>
